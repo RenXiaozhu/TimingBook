@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A236DADA1B8B046F00465BA8 /* untitle2d.png in Resources */ = {isa = PBXBuildFile; fileRef = A236DAD91B8B046F00465BA8 /* untitle2d.png */; };
+		A236DADC1B8B0A5500465BA8 /* HZLanchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A236DADB1B8B0A5500465BA8 /* HZLanchScreenViewController.swift */; };
+		A236DAF91B8EE71F00465BA8 /* u=3087698084,528181001&fm=21&gp=8.png in Resources */ = {isa = PBXBuildFile; fileRef = A236DAF01B8EE71F00465BA8 /* u=3087698084,528181001&fm=21&gp=8.png */; };
+		A236DAFA1B8EE71F00465BA8 /* 启动图-001.png in Resources */ = {isa = PBXBuildFile; fileRef = A236DAF11B8EE71F00465BA8 /* 启动图-001.png */; };
+		A236DAFB1B8EE71F00465BA8 /* 启动图-002.png in Resources */ = {isa = PBXBuildFile; fileRef = A236DAF21B8EE71F00465BA8 /* 启动图-002.png */; };
+		A236DAFC1B8EE71F00465BA8 /* 启动图-003.png in Resources */ = {isa = PBXBuildFile; fileRef = A236DAF31B8EE71F00465BA8 /* 启动图-003.png */; };
+		A236DAFD1B8EE71F00465BA8 /* 启动图-005.png in Resources */ = {isa = PBXBuildFile; fileRef = A236DAF41B8EE71F00465BA8 /* 启动图-005.png */; };
+		A236DB081B901AA400465BA8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A236DB041B901AA400465BA8 /* Default.png */; };
+		A236DB091B901AA400465BA8 /* Default_568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A236DB051B901AA400465BA8 /* Default_568@2x.png */; };
+		A236DB0A1B901AA400465BA8 /* 640_960.png in Resources */ = {isa = PBXBuildFile; fileRef = A236DB061B901AA400465BA8 /* 640_960.png */; };
+		A236DB0B1B901AA400465BA8 /* Default_375@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A236DB071B901AA400465BA8 /* Default_375@2x.png */; };
+		A236DB0D1B901AE700465BA8 /* Default_414@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A236DB0C1B901AE700465BA8 /* Default_414@3x.png */; };
+		A258C2B11B787BBA00CDC88B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258C2B01B787BBA00CDC88B /* AppDelegate.swift */; };
+		A258C2B61B787BBA00CDC88B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A258C2B41B787BBA00CDC88B /* Main.storyboard */; };
+		A258C2B81B787BBA00CDC88B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A258C2B71B787BBA00CDC88B /* Images.xcassets */; };
+		A258C2BB1B787BBA00CDC88B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A258C2B91B787BBA00CDC88B /* LaunchScreen.xib */; };
+		A258C2C71B787BBA00CDC88B /* TimingBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258C2C61B787BBA00CDC88B /* TimingBookTests.swift */; };
+		A258C2D21B787D3200CDC88B /* HZRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258C2D11B787D3200CDC88B /* HZRootViewController.swift */; };
+		A258C2D41B788B3A00CDC88B /* HZTiplabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258C2D31B788B3A00CDC88B /* HZTiplabel.swift */; };
+		A258C2D61B79E74B00CDC88B /* HZIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258C2D51B79E74B00CDC88B /* HZIndicatorView.swift */; };
+		A258C2D81B79F08100CDC88B /* HZRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258C2D71B79F08100CDC88B /* HZRefreshView.swift */; };
+		A258C2DA1B7C769800CDC88B /* HZPublicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258C2D91B7C769800CDC88B /* HZPublicClass.swift */; };
+		A266E95E1B944DA200C043A4 /* UIConfigFile.plist in Resources */ = {isa = PBXBuildFile; fileRef = A266E95D1B944DA200C043A4 /* UIConfigFile.plist */; };
+		A266E9601B944DE600C043A4 /* HZDataManageClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266E95F1B944DE600C043A4 /* HZDataManageClass.swift */; };
+		A298FF041B81E27F002A5D2B /* HZFMDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298FF031B81E27F002A5D2B /* HZFMDatabase.swift */; };
+		A298FF061B81E2AC002A5D2B /* HZFMDatabaseAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298FF051B81E2AC002A5D2B /* HZFMDatabaseAdditions.swift */; };
+		A298FF081B81E2D1002A5D2B /* HZFMDatabasePool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298FF071B81E2D1002A5D2B /* HZFMDatabasePool.swift */; };
+		A298FF0A1B81E2E8002A5D2B /* HZFMDatabaseQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298FF091B81E2E8002A5D2B /* HZFMDatabaseQueue.swift */; };
+		A298FF0C1B81E302002A5D2B /* HZFMResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298FF0B1B81E302002A5D2B /* HZFMResultSet.swift */; };
+		A298FF0E1B81E3A4002A5D2B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A298FF0D1B81E3A4002A5D2B /* libsqlite3.dylib */; };
+		A2C167391B7DF97D002DFF72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C167381B7DF97D002DFF72 /* UIKit.framework */; };
+		A2C1673B1B7DF984002DFF72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C1673A1B7DF984002DFF72 /* Foundation.framework */; };
+		A2C1673D1B7DFEF7002DFF72 /* HZBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C1673C1B7DFEF7002DFF72 /* HZBasicViewController.swift */; };
+		A2E3D2C61B85B410002A349C /* HZCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3D2C51B85B410002A349C /* HZCenterViewController.swift */; };
+		A2E3D2C81B85B420002A349C /* HZPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3D2C71B85B420002A349C /* HZPhotoViewController.swift */; };
+		A2E3D2CA1B85B432002A349C /* HZDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3D2C91B85B432002A349C /* HZDiaryViewController.swift */; };
+		A2E3D2CC1B85B702002A349C /* HZTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3D2CB1B85B702002A349C /* HZTabbarViewController.swift */; };
+		A2E3D2D21B85C1D0002A349C /* HZTabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3D2D11B85C1D0002A349C /* HZTabbarItem.swift */; };
+		A2E3D2D71B85CA7B002A349C /* TwinkleImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E3D2D51B85CA7B002A349C /* TwinkleImage.png */; };
+		A2E3D2D81B85CA7B002A349C /* Twinkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3D2D61B85CA7B002A349C /* Twinkle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A258C2C11B787BBA00CDC88B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A258C2A31B787BBA00CDC88B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A258C2AA1B787BBA00CDC88B;
+			remoteInfo = TimingBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A236DAD91B8B046F00465BA8 /* untitle2d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = untitle2d.png; sourceTree = "<group>"; };
+		A236DADB1B8B0A5500465BA8 /* HZLanchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZLanchScreenViewController.swift; sourceTree = "<group>"; };
+		A236DAF01B8EE71F00465BA8 /* u=3087698084,528181001&fm=21&gp=8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "u=3087698084,528181001&fm=21&gp=8.png"; sourceTree = "<group>"; };
+		A236DAF11B8EE71F00465BA8 /* 启动图-001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动图-001.png"; sourceTree = "<group>"; };
+		A236DAF21B8EE71F00465BA8 /* 启动图-002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动图-002.png"; sourceTree = "<group>"; };
+		A236DAF31B8EE71F00465BA8 /* 启动图-003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动图-003.png"; sourceTree = "<group>"; };
+		A236DAF41B8EE71F00465BA8 /* 启动图-005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动图-005.png"; sourceTree = "<group>"; };
+		A236DB041B901AA400465BA8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A236DB051B901AA400465BA8 /* Default_568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default_568@2x.png"; sourceTree = "<group>"; };
+		A236DB061B901AA400465BA8 /* 640_960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640_960.png; sourceTree = "<group>"; };
+		A236DB071B901AA400465BA8 /* Default_375@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default_375@2x.png"; sourceTree = "<group>"; };
+		A236DB0C1B901AE700465BA8 /* Default_414@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default_414@3x.png"; sourceTree = "<group>"; };
+		A258C2AB1B787BBA00CDC88B /* TimingBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimingBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A258C2AF1B787BBA00CDC88B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A258C2B01B787BBA00CDC88B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A258C2B51B787BBA00CDC88B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A258C2B71B787BBA00CDC88B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A258C2BA1B787BBA00CDC88B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A258C2C01B787BBA00CDC88B /* TimingBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimingBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A258C2C51B787BBA00CDC88B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A258C2C61B787BBA00CDC88B /* TimingBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingBookTests.swift; sourceTree = "<group>"; };
+		A258C2D11B787D3200CDC88B /* HZRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZRootViewController.swift; sourceTree = "<group>"; };
+		A258C2D31B788B3A00CDC88B /* HZTiplabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTiplabel.swift; sourceTree = "<group>"; };
+		A258C2D51B79E74B00CDC88B /* HZIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZIndicatorView.swift; sourceTree = "<group>"; };
+		A258C2D71B79F08100CDC88B /* HZRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZRefreshView.swift; sourceTree = "<group>"; };
+		A258C2D91B7C769800CDC88B /* HZPublicClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZPublicClass.swift; sourceTree = "<group>"; };
+		A266E95D1B944DA200C043A4 /* UIConfigFile.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UIConfigFile.plist; sourceTree = "<group>"; };
+		A266E95F1B944DE600C043A4 /* HZDataManageClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZDataManageClass.swift; sourceTree = "<group>"; };
+		A298FF031B81E27F002A5D2B /* HZFMDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZFMDatabase.swift; sourceTree = "<group>"; };
+		A298FF051B81E2AC002A5D2B /* HZFMDatabaseAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZFMDatabaseAdditions.swift; sourceTree = "<group>"; };
+		A298FF071B81E2D1002A5D2B /* HZFMDatabasePool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZFMDatabasePool.swift; sourceTree = "<group>"; };
+		A298FF091B81E2E8002A5D2B /* HZFMDatabaseQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZFMDatabaseQueue.swift; sourceTree = "<group>"; };
+		A298FF0B1B81E302002A5D2B /* HZFMResultSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZFMResultSet.swift; sourceTree = "<group>"; };
+		A298FF0D1B81E3A4002A5D2B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		A298FF101B81EDED002A5D2B /* TimingBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimingBook-Bridging-Header.h"; sourceTree = "<group>"; };
+		A2C167381B7DF97D002DFF72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A2C1673A1B7DF984002DFF72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A2C1673C1B7DFEF7002DFF72 /* HZBasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZBasicViewController.swift; sourceTree = "<group>"; };
+		A2E3D2C51B85B410002A349C /* HZCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZCenterViewController.swift; sourceTree = "<group>"; };
+		A2E3D2C71B85B420002A349C /* HZPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZPhotoViewController.swift; sourceTree = "<group>"; };
+		A2E3D2C91B85B432002A349C /* HZDiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZDiaryViewController.swift; sourceTree = "<group>"; };
+		A2E3D2CB1B85B702002A349C /* HZTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTabbarViewController.swift; sourceTree = "<group>"; };
+		A2E3D2D11B85C1D0002A349C /* HZTabbarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HZTabbarItem.swift; sourceTree = "<group>"; };
+		A2E3D2D51B85CA7B002A349C /* TwinkleImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwinkleImage.png; sourceTree = "<group>"; };
+		A2E3D2D61B85CA7B002A349C /* Twinkle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Twinkle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A258C2A81B787BBA00CDC88B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A298FF0E1B81E3A4002A5D2B /* libsqlite3.dylib in Frameworks */,
+				A2C1673B1B7DF984002DFF72 /* Foundation.framework in Frameworks */,
+				A2C167391B7DF97D002DFF72 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A258C2BD1B787BBA00CDC88B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A236DAEF1B8EE71F00465BA8 /* 启动图片 */ = {
+			isa = PBXGroup;
+			children = (
+				A236DB0C1B901AE700465BA8 /* Default_414@3x.png */,
+				A236DB041B901AA400465BA8 /* Default.png */,
+				A236DB051B901AA400465BA8 /* Default_568@2x.png */,
+				A236DB061B901AA400465BA8 /* 640_960.png */,
+				A236DB071B901AA400465BA8 /* Default_375@2x.png */,
+				A236DAF01B8EE71F00465BA8 /* u=3087698084,528181001&fm=21&gp=8.png */,
+				A236DAF11B8EE71F00465BA8 /* 启动图-001.png */,
+				A236DAF21B8EE71F00465BA8 /* 启动图-002.png */,
+				A236DAF31B8EE71F00465BA8 /* 启动图-003.png */,
+				A236DAF41B8EE71F00465BA8 /* 启动图-005.png */,
+			);
+			path = "启动图片";
+			sourceTree = "<group>";
+		};
+		A236DB0E1B903C5600465BA8 /* SpeechRecognition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SpeechRecognition;
+			sourceTree = "<group>";
+		};
+		A258C2A21B787BBA00CDC88B = {
+			isa = PBXGroup;
+			children = (
+				A258C2AD1B787BBA00CDC88B /* TimingBook */,
+				A258C2C31B787BBA00CDC88B /* TimingBookTests */,
+				A258C2AC1B787BBA00CDC88B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A258C2AC1B787BBA00CDC88B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A258C2AB1B787BBA00CDC88B /* TimingBook.app */,
+				A258C2C01B787BBA00CDC88B /* TimingBookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A258C2AD1B787BBA00CDC88B /* TimingBook */ = {
+			isa = PBXGroup;
+			children = (
+				A2E3D2C01B85A9CF002A349C /* Resoures */,
+				A236DB0E1B903C5600465BA8 /* SpeechRecognition */,
+				A2E3D2BD1B85A852002A349C /* DataManage */,
+				A2E3D2BC1B85A7D1002A349C /* UIAchieve */,
+				A2E3D2BB1B85A734002A349C /* FounctionModules */,
+				A2E3D2BA1B85A726002A349C /* PublicClass */,
+				A258C2AE1B787BBA00CDC88B /* Supporting Files */,
+			);
+			path = TimingBook;
+			sourceTree = "<group>";
+		};
+		A258C2AE1B787BBA00CDC88B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A298FF0D1B81E3A4002A5D2B /* libsqlite3.dylib */,
+				A2C1673A1B7DF984002DFF72 /* Foundation.framework */,
+				A2C167381B7DF97D002DFF72 /* UIKit.framework */,
+				A258C2AF1B787BBA00CDC88B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A258C2C31B787BBA00CDC88B /* TimingBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				A258C2C61B787BBA00CDC88B /* TimingBookTests.swift */,
+				A258C2C41B787BBA00CDC88B /* Supporting Files */,
+			);
+			path = TimingBookTests;
+			sourceTree = "<group>";
+		};
+		A258C2C41B787BBA00CDC88B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A258C2C51B787BBA00CDC88B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A266E95C1B944D6A00C043A4 /* ConfigPlist */ = {
+			isa = PBXGroup;
+			children = (
+				A266E95D1B944DA200C043A4 /* UIConfigFile.plist */,
+			);
+			name = ConfigPlist;
+			sourceTree = "<group>";
+		};
+		A298FF021B81E22B002A5D2B /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				A298FF031B81E27F002A5D2B /* HZFMDatabase.swift */,
+				A298FF051B81E2AC002A5D2B /* HZFMDatabaseAdditions.swift */,
+				A298FF071B81E2D1002A5D2B /* HZFMDatabasePool.swift */,
+				A298FF091B81E2E8002A5D2B /* HZFMDatabaseQueue.swift */,
+				A298FF0B1B81E302002A5D2B /* HZFMResultSet.swift */,
+				A298FF101B81EDED002A5D2B /* TimingBook-Bridging-Header.h */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		A2E3D2BA1B85A726002A349C /* PublicClass */ = {
+			isa = PBXGroup;
+			children = (
+				A258C2B01B787BBA00CDC88B /* AppDelegate.swift */,
+				A258C2D91B7C769800CDC88B /* HZPublicClass.swift */,
+			);
+			name = PublicClass;
+			sourceTree = "<group>";
+		};
+		A2E3D2BB1B85A734002A349C /* FounctionModules */ = {
+			isa = PBXGroup;
+			children = (
+				A2E3D2D01B85C193002A349C /* TabbarItem */,
+				A2E3D2CF1B85C166002A349C /* Indicator */,
+				A2E3D2CE1B85C14F002A349C /* TipLabel */,
+				A2E3D2CD1B85C11A002A349C /* RefreshView */,
+			);
+			name = FounctionModules;
+			sourceTree = "<group>";
+		};
+		A2E3D2BC1B85A7D1002A349C /* UIAchieve */ = {
+			isa = PBXGroup;
+			children = (
+				A2E3D2C41B85B3C4002A349C /* Center */,
+				A2E3D2C31B85B3A8002A349C /* Photos */,
+				A2E3D2C21B85AB1B002A349C /* Diary */,
+				A2E3D2C11B85AA2C002A349C /* BasicControllers */,
+			);
+			name = UIAchieve;
+			sourceTree = "<group>";
+		};
+		A2E3D2BD1B85A852002A349C /* DataManage */ = {
+			isa = PBXGroup;
+			children = (
+				A266E95C1B944D6A00C043A4 /* ConfigPlist */,
+				A2E3D2BF1B85A9AB002A349C /* DataManageClass */,
+				A2E3D2BE1B85A8B5002A349C /* HttpRequest */,
+				A298FF021B81E22B002A5D2B /* FMDB */,
+			);
+			name = DataManage;
+			sourceTree = "<group>";
+		};
+		A2E3D2BE1B85A8B5002A349C /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = HttpRequest;
+			sourceTree = "<group>";
+		};
+		A2E3D2BF1B85A9AB002A349C /* DataManageClass */ = {
+			isa = PBXGroup;
+			children = (
+				A266E95F1B944DE600C043A4 /* HZDataManageClass.swift */,
+			);
+			name = DataManageClass;
+			sourceTree = "<group>";
+		};
+		A2E3D2C01B85A9CF002A349C /* Resoures */ = {
+			isa = PBXGroup;
+			children = (
+				A236DAEF1B8EE71F00465BA8 /* 启动图片 */,
+				A236DAD91B8B046F00465BA8 /* untitle2d.png */,
+				A258C2B41B787BBA00CDC88B /* Main.storyboard */,
+				A258C2B71B787BBA00CDC88B /* Images.xcassets */,
+				A258C2B91B787BBA00CDC88B /* LaunchScreen.xib */,
+			);
+			name = Resoures;
+			sourceTree = "<group>";
+		};
+		A2E3D2C11B85AA2C002A349C /* BasicControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2C1673C1B7DFEF7002DFF72 /* HZBasicViewController.swift */,
+				A258C2D11B787D3200CDC88B /* HZRootViewController.swift */,
+				A2E3D2CB1B85B702002A349C /* HZTabbarViewController.swift */,
+				A236DADB1B8B0A5500465BA8 /* HZLanchScreenViewController.swift */,
+			);
+			name = BasicControllers;
+			sourceTree = "<group>";
+		};
+		A2E3D2C21B85AB1B002A349C /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				A2E3D2C91B85B432002A349C /* HZDiaryViewController.swift */,
+			);
+			name = Diary;
+			sourceTree = "<group>";
+		};
+		A2E3D2C31B85B3A8002A349C /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				A2E3D2C71B85B420002A349C /* HZPhotoViewController.swift */,
+			);
+			name = Photos;
+			sourceTree = "<group>";
+		};
+		A2E3D2C41B85B3C4002A349C /* Center */ = {
+			isa = PBXGroup;
+			children = (
+				A2E3D2C51B85B410002A349C /* HZCenterViewController.swift */,
+			);
+			name = Center;
+			sourceTree = "<group>";
+		};
+		A2E3D2CD1B85C11A002A349C /* RefreshView */ = {
+			isa = PBXGroup;
+			children = (
+				A258C2D71B79F08100CDC88B /* HZRefreshView.swift */,
+			);
+			name = RefreshView;
+			sourceTree = "<group>";
+		};
+		A2E3D2CE1B85C14F002A349C /* TipLabel */ = {
+			isa = PBXGroup;
+			children = (
+				A258C2D31B788B3A00CDC88B /* HZTiplabel.swift */,
+			);
+			name = TipLabel;
+			sourceTree = "<group>";
+		};
+		A2E3D2CF1B85C166002A349C /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				A258C2D51B79E74B00CDC88B /* HZIndicatorView.swift */,
+			);
+			name = Indicator;
+			sourceTree = "<group>";
+		};
+		A2E3D2D01B85C193002A349C /* TabbarItem */ = {
+			isa = PBXGroup;
+			children = (
+				A2E3D2D31B85CA7B002A349C /* Source */,
+				A2E3D2D11B85C1D0002A349C /* HZTabbarItem.swift */,
+			);
+			name = TabbarItem;
+			sourceTree = "<group>";
+		};
+		A2E3D2D31B85CA7B002A349C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A2E3D2D41B85CA7B002A349C /* Resources */,
+				A2E3D2D61B85CA7B002A349C /* Twinkle.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A2E3D2D41B85CA7B002A349C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2E3D2D51B85CA7B002A349C /* TwinkleImage.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A258C2AA1B787BBA00CDC88B /* TimingBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A258C2CA1B787BBA00CDC88B /* Build configuration list for PBXNativeTarget "TimingBook" */;
+			buildPhases = (
+				A258C2A71B787BBA00CDC88B /* Sources */,
+				A258C2A81B787BBA00CDC88B /* Frameworks */,
+				A258C2A91B787BBA00CDC88B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimingBook;
+			productName = TimingBook;
+			productReference = A258C2AB1B787BBA00CDC88B /* TimingBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A258C2BF1B787BBA00CDC88B /* TimingBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A258C2CD1B787BBA00CDC88B /* Build configuration list for PBXNativeTarget "TimingBookTests" */;
+			buildPhases = (
+				A258C2BC1B787BBA00CDC88B /* Sources */,
+				A258C2BD1B787BBA00CDC88B /* Frameworks */,
+				A258C2BE1B787BBA00CDC88B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A258C2C21B787BBA00CDC88B /* PBXTargetDependency */,
+			);
+			name = TimingBookTests;
+			productName = TimingBookTests;
+			productReference = A258C2C01B787BBA00CDC88B /* TimingBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A258C2A31B787BBA00CDC88B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HZ;
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Horizon;
+				TargetAttributes = {
+					A258C2AA1B787BBA00CDC88B = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					A258C2BF1B787BBA00CDC88B = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = A258C2AA1B787BBA00CDC88B;
+					};
+				};
+			};
+			buildConfigurationList = A258C2A61B787BBA00CDC88B /* Build configuration list for PBXProject "TimingBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A258C2A21B787BBA00CDC88B;
+			productRefGroup = A258C2AC1B787BBA00CDC88B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A258C2AA1B787BBA00CDC88B /* TimingBook */,
+				A258C2BF1B787BBA00CDC88B /* TimingBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A258C2A91B787BBA00CDC88B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A266E95E1B944DA200C043A4 /* UIConfigFile.plist in Resources */,
+				A236DB0D1B901AE700465BA8 /* Default_414@3x.png in Resources */,
+				A2E3D2D71B85CA7B002A349C /* TwinkleImage.png in Resources */,
+				A236DAFB1B8EE71F00465BA8 /* 启动图-002.png in Resources */,
+				A236DB081B901AA400465BA8 /* Default.png in Resources */,
+				A236DB0B1B901AA400465BA8 /* Default_375@2x.png in Resources */,
+				A236DADA1B8B046F00465BA8 /* untitle2d.png in Resources */,
+				A236DAFC1B8EE71F00465BA8 /* 启动图-003.png in Resources */,
+				A236DAF91B8EE71F00465BA8 /* u=3087698084,528181001&fm=21&gp=8.png in Resources */,
+				A258C2B61B787BBA00CDC88B /* Main.storyboard in Resources */,
+				A258C2BB1B787BBA00CDC88B /* LaunchScreen.xib in Resources */,
+				A236DB091B901AA400465BA8 /* Default_568@2x.png in Resources */,
+				A258C2B81B787BBA00CDC88B /* Images.xcassets in Resources */,
+				A236DAFD1B8EE71F00465BA8 /* 启动图-005.png in Resources */,
+				A236DAFA1B8EE71F00465BA8 /* 启动图-001.png in Resources */,
+				A236DB0A1B901AA400465BA8 /* 640_960.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A258C2BE1B787BBA00CDC88B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A258C2A71B787BBA00CDC88B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E3D2CA1B85B432002A349C /* HZDiaryViewController.swift in Sources */,
+				A258C2D21B787D3200CDC88B /* HZRootViewController.swift in Sources */,
+				A2E3D2D81B85CA7B002A349C /* Twinkle.swift in Sources */,
+				A298FF0A1B81E2E8002A5D2B /* HZFMDatabaseQueue.swift in Sources */,
+				A2C1673D1B7DFEF7002DFF72 /* HZBasicViewController.swift in Sources */,
+				A298FF0C1B81E302002A5D2B /* HZFMResultSet.swift in Sources */,
+				A2E3D2CC1B85B702002A349C /* HZTabbarViewController.swift in Sources */,
+				A258C2DA1B7C769800CDC88B /* HZPublicClass.swift in Sources */,
+				A258C2D41B788B3A00CDC88B /* HZTiplabel.swift in Sources */,
+				A258C2D61B79E74B00CDC88B /* HZIndicatorView.swift in Sources */,
+				A298FF061B81E2AC002A5D2B /* HZFMDatabaseAdditions.swift in Sources */,
+				A2E3D2C61B85B410002A349C /* HZCenterViewController.swift in Sources */,
+				A2E3D2C81B85B420002A349C /* HZPhotoViewController.swift in Sources */,
+				A298FF041B81E27F002A5D2B /* HZFMDatabase.swift in Sources */,
+				A298FF081B81E2D1002A5D2B /* HZFMDatabasePool.swift in Sources */,
+				A258C2D81B79F08100CDC88B /* HZRefreshView.swift in Sources */,
+				A236DADC1B8B0A5500465BA8 /* HZLanchScreenViewController.swift in Sources */,
+				A266E9601B944DE600C043A4 /* HZDataManageClass.swift in Sources */,
+				A2E3D2D21B85C1D0002A349C /* HZTabbarItem.swift in Sources */,
+				A258C2B11B787BBA00CDC88B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A258C2BC1B787BBA00CDC88B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A258C2C71B787BBA00CDC88B /* TimingBookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A258C2C21B787BBA00CDC88B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A258C2AA1B787BBA00CDC88B /* TimingBook */;
+			targetProxy = A258C2C11B787BBA00CDC88B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A258C2B41B787BBA00CDC88B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A258C2B51B787BBA00CDC88B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A258C2B91B787BBA00CDC88B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A258C2BA1B787BBA00CDC88B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A258C2C81B787BBA00CDC88B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LIBRARY_SEARCH_PATHS = usr/include/libsqlite3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A258C2C91B787BBA00CDC88B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LIBRARY_SEARCH_PATHS = usr/include/libsqlite3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A258C2CB1B787BBA00CDC88B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = TimingBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = usr/include/libsqlite3;
+				ONLY_ACTIVE_ARCH = NO;
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TimingBook/TimingBook-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A258C2CC1B787BBA00CDC88B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = TimingBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = usr/include/libsqlite3;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TimingBook/TimingBook-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		A258C2CE1B787BBA00CDC88B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TimingBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimingBook.app/TimingBook";
+			};
+			name = Debug;
+		};
+		A258C2CF1B787BBA00CDC88B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TimingBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimingBook.app/TimingBook";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A258C2A61B787BBA00CDC88B /* Build configuration list for PBXProject "TimingBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A258C2C81B787BBA00CDC88B /* Debug */,
+				A258C2C91B787BBA00CDC88B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A258C2CA1B787BBA00CDC88B /* Build configuration list for PBXNativeTarget "TimingBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A258C2CB1B787BBA00CDC88B /* Debug */,
+				A258C2CC1B787BBA00CDC88B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A258C2CD1B787BBA00CDC88B /* Build configuration list for PBXNativeTarget "TimingBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A258C2CE1B787BBA00CDC88B /* Debug */,
+				A258C2CF1B787BBA00CDC88B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A258C2A31B787BBA00CDC88B /* Project object */;
+}

@@ -34,7 +34,8 @@ extension UIColor
             let rs = aColorString.getSubStringWithRange(Range(start: co-6, end: co-4))
             let gs = aColorString.getSubStringWithRange(Range(start: co-4, end: co-2))
             let bs = aColorString.getSubStringWithRange(Range(start: co-2, end: co))
-            
+            let color = aColorString
+
             var r:UInt32 = 0
             var g:UInt32 = 0
             var b:UInt32 = 0
@@ -48,7 +49,7 @@ extension UIColor
                            blue:  CGFloat(b)/255.0,
                            alpha: 1.0)
         }
-        
+
         return UIColor.clearColor()
     }
     

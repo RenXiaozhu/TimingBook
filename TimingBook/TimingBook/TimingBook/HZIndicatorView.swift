@@ -25,9 +25,9 @@ class HZIndicatorView: UIView {
     
     init(baseframe:CGRect)
     {
-       let rect = UIScreen.mainScreen().bounds
+       let rect = UIScreen.main.bounds
        
-       super.init(frame: CGRectMake(rect.width/2-50, rect.height/2-50, 100, 100))
+       super.init(frame: CGRect(x: rect.width/2-50, y: rect.height/2-50, width: 100, height: 100))
        self.initUI()
     }
     
@@ -41,7 +41,6 @@ class HZIndicatorView: UIView {
     func loadData(){
     
     }
-    ffff
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

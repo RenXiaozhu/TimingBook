@@ -34,32 +34,32 @@ class HZTabbarItem: UIView {
     }
     
     
-    override func willMoveToSuperview(newSuperview: UIView?) {
-        super.willMoveToSuperview(newSuperview)
+    override func willMove(toSuperview newSuperview: UIView?) {
+        super.willMove(toSuperview: newSuperview)
         
     }
     
-    private func initUI(){
-        self.backgroundColor = UIColor.blackColor()
+    fileprivate func initUI(){
+        self.backgroundColor = UIColor.black
         button = UIButton(frame: self.bounds)
         self.addSubview(button!)
     }
     
-    func addItemTarget(target: AnyObject?, action: Selector, forControlEvents controlEvents: UIControlEvents){
+    func addItemTarget(_ target: AnyObject?, action: Selector, forControlEvents controlEvents: UIControlEvents){
         
         tSelect = action
         tTarget = target
-        button?.addTarget( self, action: Selector("doAction:"), forControlEvents: controlEvents)
+        button?.addTarget( self, action: #selector(HZTabbarItem.doAction(_:)), for: controlEvents)
         
         
     }
     
-   func doAction(btn:UIButton){
+   func doAction(_ btn:UIButton){
     
         
         if (tTarget?.isEmpty == false)
         {
-            if tTarget!.respondsToSelector(tSelect!) == true
+            if tTarget!.responds(to: tSelect!) == true
             {
                 
             }

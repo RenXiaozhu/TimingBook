@@ -17,9 +17,9 @@ class HZTiplabel: UILabel {
     override init(frame: CGRect) {
         super.init(frame: CGRect())
         self.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-        self.font            = UIFont.systemFontOfSize(12)
-        self.textAlignment   = NSTextAlignment.Center
-        self.textColor       = UIColor.lightGrayColor()
+        self.font            = UIFont.systemFont(ofSize: 12)
+        self.textAlignment   = NSTextAlignment.center
+        self.textColor       = UIColor.lightGray
         
     }
 
@@ -31,31 +31,31 @@ class HZTiplabel: UILabel {
     /*
     *  @description 展示动画
     */
-    func showSelfWithMessage(message:String)
+    func showSelfWithMessage(_ message:String)
     {
         var superView:UIView? = self.superview
         
-        superview?.bringSubviewToFront(self)
+        superview?.bringSubview(toFront: self)
         self.text = message as String
         
-        UIView.animateWithDuration( 1.0,
+        UIView.animate( withDuration: 1.0,
             delay: 2.0,
-            options: .CurveEaseInOut,
+            options: UIViewAnimationOptions(),
             animations: {
                 
                 let rect:CGRect = self.frame
-                self.frame = CGRectMake( rect.origin.x+rect.size.width,
-                                         rect.origin.y,
-                                         rect.size.width,
-                                         rect.size.height)
+                self.frame = CGRect( x: rect.origin.x+rect.size.width,
+                                         y: rect.origin.y,
+                                         width: rect.size.width,
+                                         height: rect.size.height)
                 self.alpha = 1.0
             },
             completion: {finished in
                 let rect:CGRect = self.frame
-                self.frame = CGRectMake( rect.origin.x-rect.size.width,
-                                         rect.origin.y,
-                                         rect.size.width,
-                                         rect.size.height)
+                self.frame = CGRect( x: rect.origin.x-rect.size.width,
+                                         y: rect.origin.y,
+                                         width: rect.size.width,
+                                         height: rect.size.height)
                 self.alpha = 0.0
         })
         

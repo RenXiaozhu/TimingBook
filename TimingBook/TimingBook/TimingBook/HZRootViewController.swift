@@ -10,7 +10,7 @@ import UIKit
 
 class HZRootViewController: UIViewController {
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?){
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?){
         
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
@@ -26,10 +26,10 @@ class HZRootViewController: UIViewController {
         
        if self.view.viewWithTag(1111) == nil
        {
-        var tipLabel:HZTiplabel  = HZTiplabel(frame: CGRectMake(-150, 400, 150, 30))
+        var tipLabel:HZTiplabel  = HZTiplabel(frame: CGRect(x: -150, y: 400, width: 150, height: 30))
         tipLabel.numberOfLines   = 1;
-        tipLabel.backgroundColor = UIColor.clearColor()
-        tipLabel.font            = UIFont.systemFontOfSize(14)
+        tipLabel.backgroundColor = UIColor.clear
+        tipLabel.font            = UIFont.systemFont(ofSize: 14)
         tipLabel.tag             = 1111
         return tipLabel
     }
@@ -45,7 +45,7 @@ class HZRootViewController: UIViewController {
         super.viewDidLoad()
 
         self.initUI()
-    refreshView = HZRefreshView(frame: CGRectMake(0, -736, 414, 736))
+    refreshView = HZRefreshView(frame: CGRect(x: 0, y: -736, width: 414, height: 736))
     refreshView!.DataDelegate = self
     refreshView!.tableViewDelegate = UITableView()
         // Do any additional setup after loading the view.

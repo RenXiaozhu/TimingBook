@@ -14,7 +14,7 @@ extension NSObject {
     
     func hiddenTabbar(){
     
-        let app:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let app:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         
         let tb:HZTabbarViewController = app.tbController!
         
@@ -24,7 +24,7 @@ extension NSObject {
     
     func showTabbar(){
     
-        let app:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let app:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         
         let tb:HZTabbarViewController = app.tbController!
         
@@ -42,25 +42,25 @@ class HZTabbarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.blackColor()
+        self.view.backgroundColor = UIColor.black
         
         initViewController()
         addGestuer()
         configTabbarColor()
         
-        let item1:HZTabbarItem = HZTabbarItem(frame: CGRectMake(0, 0 , 140, 49))
-        item1.button?.setTitle("日记", forState: UIControlState.Normal)
-        item1.button?.setTitleColor(UIColor(red: 1, green: 1, blue: 1, alpha: 1), forState: UIControlState.Normal)
-        item1 .addItemTarget(self, action: Selector(""), forControlEvents: UIControlEvents.TouchUpInside)
+        let item1:HZTabbarItem = HZTabbarItem(frame: CGRect(x: 0, y: 0 , width: 140, height: 49))
+        item1.button?.setTitle("日记", for: UIControlState())
+        item1.button?.setTitleColor(UIColor(red: 1, green: 1, blue: 1, alpha: 1), for: UIControlState())
+        item1 .addItemTarget(self, action: Selector(""), forControlEvents: UIControlEvents.touchUpInside)
         self.view.addSubview(item1)
         // Do any additional setup after loading the view.
     }
     
     func initViewController()
     {
-        let diary:HZDiaryViewController  = HZDiaryViewController()
-        let photo:HZPhotoViewController  = HZPhotoViewController()
-        let center:HZCenterViewController = HZCenterViewController()
+        let diary:HZDiaryViewController  = HZDiaryViewController(coder: <#NSCoder#>)!
+        let photo:HZPhotoViewController  = HZPhotoViewController(coder: <#NSCoder#>)!
+        let center:HZCenterViewController = HZCenterViewController(coder: <#NSCoder#>)!
     
         diary.tabBarItem = UITabBarItem(title: "日记", image: nil, selectedImage: nil)
         photo.tabBarItem = UITabBarItem(title: "相册", image: nil, selectedImage: nil)
@@ -72,9 +72,9 @@ class HZTabbarViewController: UITabBarController {
     func addGestuer()
     {
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self,
-            action: Selector("hidOrShowTabbr"))
+            action: #selector(HZTabbarViewController.hidOrShowTabbr))
         tap.numberOfTapsRequired = 2
-        tap.enabled = true
+        tap.isEnabled = true
         self.view.addGestureRecognizer(tap)
         
         isShowIngTabbar = true
@@ -107,9 +107,9 @@ class HZTabbarViewController: UITabBarController {
     func TohiddenTabbar()
     {
         
-        UIView.animateWithDuration(0.3, animations:
+        UIView.animate(withDuration: 0.3, animations:
             {
-                self.tabBar.frame = CGRectMake(0, ScreenHeight, ScreenWith, 49)
+                self.tabBar.frame = CGRect(x: 0, y: ScreenHeight, width: ScreenWith, height: 49)
                 self.tabBar.alpha = 0.0
             },
             completion:
@@ -122,9 +122,9 @@ class HZTabbarViewController: UITabBarController {
     func ToshowTabbar()
     {
     
-        UIView.animateWithDuration(0.3, animations:
+        UIView.animate(withDuration: 0.3, animations:
             {
-                self.tabBar.frame = CGRectMake(0, ScreenHeight-49, ScreenWith, 49)
+                self.tabBar.frame = CGRect(x: 0, y: ScreenHeight-49, width: ScreenWith, height: 49)
                 self.tabBar.alpha = 1.0
             },
             completion:

@@ -38,28 +38,28 @@ class HZDataManageClass: NSObject {
     }
     
     
-    private func readConfig()
+    fileprivate func readConfig()
     {
         
-        let paths:NSArray = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
+        let paths:NSArray = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true) as NSArray
         
         let documentDirectory:String = paths[0] as! String
         
         let plistPath:String = documentDirectory+"UIConfig.plist"
         
-        let filemanage:NSFileManager = NSFileManager.defaultManager()
+        let filemanage:FileManager = FileManager.default
         
-        if filemanage.fileExistsAtPath(plistPath)
+        if filemanage.fileExists(atPath: plistPath)
         {
             configDict = NSMutableDictionary(contentsOfFile: plistPath)
         }
         else
         {
-            filemanage.createFileAtPath(plistPath, contents: nil, attributes: [:])
+            filemanage.createFile(atPath: plistPath, contents: nil, attributes: [:])
         }
     }
     
-    private func creatDefaultConfig()
+    fileprivate func creatDefaultConfig()
     {
         /*
             

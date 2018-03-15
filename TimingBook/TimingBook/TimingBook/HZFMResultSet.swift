@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-func FMDBAutorelease(bbb:AnyObject) {
+func FMDBAutorelease(_ bbb:AnyObject) {
     
     autoreleasepool{
         bbb

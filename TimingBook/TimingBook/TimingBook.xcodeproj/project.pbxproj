@@ -439,9 +439,11 @@
 				TargetAttributes = {
 					A258C2AA1B787BBA00CDC88B = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0830;
 					};
 					A258C2BF1B787BBA00CDC88B = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0830;
 						TestTargetID = A258C2AA1B787BBA00CDC88B;
 					};
 				};
@@ -662,6 +664,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TimingBook/TimingBook-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -678,6 +681,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TimingBook/TimingBook-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -696,6 +700,7 @@
 				INFOPLIST_FILE = TimingBookTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimingBook.app/TimingBook";
 			};
 			name = Debug;
@@ -711,6 +716,7 @@
 				INFOPLIST_FILE = TimingBookTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimingBook.app/TimingBook";
 			};
 			name = Release;

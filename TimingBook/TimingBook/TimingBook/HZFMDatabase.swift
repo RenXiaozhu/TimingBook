@@ -11,9 +11,9 @@ import UIKit
 class HZFMDatabase: NSObject {
    
     var dbpath:String?
-    var database:COpaquePointer = nil
+    var database:OpaquePointer? = nil
     
-    func initWith(dbString:String)
+    func initWith(_ dbString:String)
     {
         dbpath = dbString
         
@@ -33,7 +33,7 @@ class HZFMDatabase: NSObject {
     */
     func openDataBase()->Bool{
         
-        let openDatabaseResult = sqlite3_open( dbpath!.cStringUsingEncoding(NSUTF8StringEncoding)!, &database )
+        let openDatabaseResult = sqlite3_open( dbpath!.cString(using: String.Encoding.utf8)!, &database )
         let result:Bool        = printResultwith( openDatabaseResult,
                                                   methodName: "sqlite3_open" )
         
@@ -50,10 +50,10 @@ class HZFMDatabase: NSObject {
     
     - returns: 是否创建成功
     */
-    func creatTable(tableName:String,fields:NSDictionary)->Bool
+    func creatTable(_ tableName:String,fields:NSDictionary)->Bool
     {
     
-        let error:UnsafeMutablePointer<UnsafeMutablePointer<Int8>> = UnsafeMutablePointer(bitPattern: 0)
+        let error:UnsafeMutablePointer<UnsafeMutablePointer<Int8>> = UnsafeMutablePointer(bitPattern: 0)!
         
         
         let handle:String = creatTableHandle(tableName, fields: fields)
@@ -79,15 +79,15 @@ class HZFMDatabase: NSObject {
     
     - returns: 返回句柄
     */
-    private func creatTableHandle(tableName:String,
+    fileprivate func creatTableHandle(_ tableName:String,
                                   fields:NSDictionary)->String
     {
         var handleString:String = "creat table if not exist \(tableName)"
         
-        for var i = 0 ; i<fields.count ; i++
+        for i in 0  ..< fields.count 
         {
             let key:String   = fields.allKeys[i] as! String
-            let value:String = fields.valueForKey(key) as! String
+            let value:String = fields.value(forKey: key) as! String
             
             if i == 0
             {
@@ -110,7 +110,7 @@ class HZFMDatabase: NSObject {
         return handleString
     }
     
-    private func creatSearchSqliteHandle( tableName:String,
+    fileprivate func creatSearchSqliteHandle( _ tableName:String,
                                           condition:String,
                                           andOther:String)->String
     {
@@ -122,7 +122,7 @@ class HZFMDatabase: NSObject {
     
     
     //MARK:打印错误日志
-    private func printResultwith( resultData:Int32 ,
+    fileprivate func printResultwith( _ resultData:Int32 ,
                                   methodName:String)->Bool{
         
         switch resultData{

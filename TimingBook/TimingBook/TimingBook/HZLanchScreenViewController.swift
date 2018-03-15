@@ -11,12 +11,12 @@ import UIKit
 class HZLanchScreenViewController: UIViewController {
     
     var LanchImg: UIImageView?
-    var timer:    NSTimer?
+    var timer:    Timer?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.translatesAutoresizingMaskIntoConstraints = false
         
-        let scale = UIScreen.mainScreen().scale
+        let scale = UIScreen.main.scale
         var name:String = ""
         
         let img:UIImage = UIImage(named: "DefaultImg")!
@@ -24,30 +24,30 @@ class HZLanchScreenViewController: UIViewController {
         LanchImg!.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(LanchImg!)
         
-        let ImgWidth:NSLayoutConstraint = NSLayoutConstraint(item: LanchImg!, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute:NSLayoutAttribute.NotAnAttribute , multiplier: 1.0, constant: img.size.width)
+        let ImgWidth:NSLayoutConstraint = NSLayoutConstraint(item: LanchImg!, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute:NSLayoutAttribute.notAnAttribute , multiplier: 1.0, constant: img.size.width)
         LanchImg!.addConstraint(ImgWidth)
         
-        let ImgHeight:NSLayoutConstraint = NSLayoutConstraint(item: LanchImg!, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute:NSLayoutAttribute.NotAnAttribute , multiplier: 1.0, constant: img.size.height)
+        let ImgHeight:NSLayoutConstraint = NSLayoutConstraint(item: LanchImg!, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute:NSLayoutAttribute.notAnAttribute , multiplier: 1.0, constant: img.size.height)
         LanchImg!.addConstraint(ImgHeight)
         
-        let centerConX:NSLayoutConstraint = NSLayoutConstraint(item: LanchImg!, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute:NSLayoutAttribute.CenterX , multiplier: 1.0, constant: 0)
+        let centerConX:NSLayoutConstraint = NSLayoutConstraint(item: LanchImg!, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute:NSLayoutAttribute.centerX , multiplier: 1.0, constant: 0)
         self.view.addConstraint(centerConX)
     
-        let centerConY:NSLayoutConstraint = NSLayoutConstraint(item: LanchImg!, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute:NSLayoutAttribute.CenterY , multiplier: 1.0, constant: 0)
+        let centerConY:NSLayoutConstraint = NSLayoutConstraint(item: LanchImg!, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute:NSLayoutAttribute.centerY , multiplier: 1.0, constant: 0)
         self.view.addConstraint(centerConY)
         
         LanchImg!.image = img
         
-        let date:NSDate = NSDate(timeIntervalSinceNow: 1.0+8*60*60)
-        timer =  NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("clear"), userInfo: nil, repeats: false)
-        NSRunLoop.currentRunLoop().addTimer(timer!, forMode: NSDefaultRunLoopMode)
+        let date:Date = Date(timeIntervalSinceNow: 1.0+8*60*60)
+        timer =  Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(HZLanchScreenViewController.clear), userInfo: nil, repeats: false)
+        RunLoop.current.add(timer!, forMode: RunLoopMode.defaultRunLoopMode)
     }
 
     func clear(){
         
         timer?.invalidate()
-        let app:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        UIView.animateWithDuration(1.0, animations:
+        let app:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        UIView.animate(withDuration: 1.0, animations:
         {
             
             app.startWindow?.alpha = 0.0
@@ -58,7 +58,7 @@ class HZLanchScreenViewController: UIViewController {
         })
     }
     
-    override func viewWillAppear(animated: Bool)
+    override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
     }

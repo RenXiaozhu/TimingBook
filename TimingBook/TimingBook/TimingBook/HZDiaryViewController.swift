@@ -21,7 +21,7 @@ class HZDiaryViewController: HZRootViewController {
         
         bookFace = UIImageView(image: im)
 //        bookFace!.userInteractionEnabled = true
-        bookFace!.frame = CGRectMake(0, 0, im.size.width, im.size.height)
+        bookFace!.frame = CGRect(x: 0, y: 0, width: im.size.width, height: im.size.height)
         self.view .addSubview(bookFace!)
         
         
@@ -32,7 +32,7 @@ class HZDiaryViewController: HZRootViewController {
     }
 
 
-     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?)
+     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         
         
